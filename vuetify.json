@@ -1,0 +1,569 @@
+{
+  "v-autocomplete": {
+    "props": [
+      {
+        "name": "allowOverflow",
+        "type": "boolean",
+        "default": "true",
+        "source": null
+      },
+      {
+        "name": "appendIcon",
+        "type": "string",
+        "default": "'$vuetify.icons.dropdown'",
+        "source": "v-input"
+      },
+      {
+        "name": "appendIconCb",
+        "type": "function",
+        "default": "null",
+        "source": "v-input"
+      },
+      {
+        "name": "appendOuterIcon",
+        "type": "string",
+        "default": "undefined",
+        "source": "v-text-field"
+      },
+      {
+        "name": "appendOuterIconCb",
+        "type": "function",
+        "default": "null",
+        "source": "v-text-field"
+      },
+      {
+        "name": "attach",
+        "type": "any",
+        "default": false,
+        "source": "v-select"
+      },
+      {
+        "name": "autoSelectFirst",
+        "type": "boolean",
+        "default": "false",
+        "source": null
+      },
+      {
+        "name": "autofocus",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-text-field"
+      },
+      {
+        "name": "backgroundColor",
+        "type": "string",
+        "default": "undefined",
+        "source": "v-input"
+      },
+      {
+        "name": "box",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-text-field"
+      },
+      {
+        "name": "browserAutocomplete",
+        "type": "string",
+        "default": "'off'",
+        "source": "v-text-field"
+      },
+      {
+        "name": "cacheItems",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-select"
+      },
+      {
+        "name": "chips",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-select"
+      },
+      {
+        "name": "clearIcon",
+        "type": "string",
+        "default": "'$vuetify.icons.clear'",
+        "source": "v-text-field"
+      },
+      {
+        "name": "clearIconCb",
+        "type": "function",
+        "default": "null",
+        "source": "v-text-field"
+      },
+      {
+        "name": "clearable",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-text-field"
+      },
+      {
+        "name": "color",
+        "type": "string",
+        "default": "'primary'",
+        "source": "colorable"
+      },
+      {
+        "name": "counter",
+        "type": [
+          "boolean",
+          "number",
+          "string"
+        ],
+        "default": "undefined",
+        "source": "v-text-field"
+      },
+      {
+        "name": "dark",
+        "type": "boolean",
+        "default": "false",
+        "source": "themeable"
+      },
+      {
+        "name": "deletableChips",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-select"
+      },
+      {
+        "name": "dense",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-select"
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "default": "false",
+        "source": "validatable"
+      },
+      {
+        "name": "dontFillMaskBlanks",
+        "type": "boolean",
+        "default": "false",
+        "source": "maskable"
+      },
+      {
+        "name": "error",
+        "type": "boolean",
+        "default": "false",
+        "source": "validatable"
+      },
+      {
+        "name": "errorCount",
+        "type": [
+          "number",
+          "string"
+        ],
+        "default": 1,
+        "source": "validatable"
+      },
+      {
+        "name": "errorMessages",
+        "type": [
+          "string",
+          "array"
+        ],
+        "default": [],
+        "source": "validatable"
+      },
+      {
+        "name": "filter",
+        "type": "function",
+        "default": "(item: object, queryText: string, itemText: string) => boolean",
+        "source": null
+      },
+      {
+        "name": "flat",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-text-field"
+      },
+      {
+        "name": "fullWidth",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-text-field"
+      },
+      {
+        "name": "height",
+        "type": [
+          "number",
+          "string"
+        ],
+        "default": "undefined",
+        "source": "v-input"
+      },
+      {
+        "name": "hideDetails",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-input"
+      },
+      {
+        "name": "hideNoData",
+        "type": "boolean",
+        "default": "false",
+        "source": null
+      },
+      {
+        "name": "hideSelected",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-select"
+      },
+      {
+        "name": "hint",
+        "type": "string",
+        "default": "undefined",
+        "source": "v-input"
+      },
+      {
+        "name": "itemAvatar",
+        "type": [
+          "string",
+          "array",
+          "function"
+        ],
+        "default": "avatar",
+        "source": "v-select"
+      },
+      {
+        "name": "itemDisabled",
+        "type": [
+          "string",
+          "array",
+          "function"
+        ],
+        "default": "disabled",
+        "source": "v-select"
+      },
+      {
+        "name": "itemText",
+        "type": [
+          "string",
+          "array",
+          "function"
+        ],
+        "default": "text",
+        "source": "v-select"
+      },
+      {
+        "name": "itemValue",
+        "type": [
+          "string",
+          "array",
+          "function"
+        ],
+        "default": "value",
+        "source": "v-select"
+      },
+      {
+        "name": "items",
+        "type": "array",
+        "default": [],
+        "source": "v-select"
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "default": "undefined",
+        "source": "v-input"
+      },
+      {
+        "name": "light",
+        "type": "boolean",
+        "default": "false",
+        "source": "themeable"
+      },
+      {
+        "name": "loading",
+        "type": [
+          "boolean",
+          "string"
+        ],
+        "default": false,
+        "source": "v-input"
+      },
+      {
+        "name": "mask",
+        "type": [
+          "object",
+          "string"
+        ],
+        "default": "undefined",
+        "source": "maskable"
+      },
+      {
+        "name": "menuProps",
+        "type": [
+          "string",
+          "array",
+          "object"
+        ],
+        "default": "{\"closeOnClick\":false, \"closeOnContentClick\":false, \"openOnClick\":false, \"maxHeight\":300}",
+        "source": "v-select"
+      },
+      {
+        "name": "messages",
+        "type": [
+          "string",
+          "array"
+        ],
+        "default": [],
+        "source": "validatable"
+      },
+      {
+        "name": "multiple",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-select"
+      },
+      {
+        "name": "noDataText",
+        "type": "string",
+        "default": "'$vuetify.noDataText'",
+        "source": "filterable"
+      },
+      {
+        "name": "noFilter",
+        "type": "boolean",
+        "default": "false",
+        "source": null
+      },
+      {
+        "name": "openOnClear",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-select"
+      },
+      {
+        "name": "outline",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-text-field"
+      },
+      {
+        "name": "persistentHint",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-input"
+      },
+      {
+        "name": "placeholder",
+        "type": "string",
+        "default": "undefined",
+        "source": "v-text-field"
+      },
+      {
+        "name": "prefix",
+        "type": "string",
+        "default": "undefined",
+        "source": "v-text-field"
+      },
+      {
+        "name": "prependIcon",
+        "type": "string",
+        "default": "undefined",
+        "source": "v-input"
+      },
+      {
+        "name": "prependIconCb",
+        "type": "function",
+        "default": "null",
+        "source": "v-input"
+      },
+      {
+        "name": "prependInnerIcon",
+        "type": "string",
+        "default": "undefined",
+        "source": "v-text-field"
+      },
+      {
+        "name": "prependInnerIconCb",
+        "type": "function",
+        "default": "null",
+        "source": "v-text-field"
+      },
+      {
+        "name": "readonly",
+        "type": "boolean",
+        "default": "false",
+        "source": "validatable"
+      },
+      {
+        "name": "returnMaskedValue",
+        "type": "boolean",
+        "default": "false",
+        "source": "maskable"
+      },
+      {
+        "name": "returnObject",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-select"
+      },
+      {
+        "name": "reverse",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-text-field"
+      },
+      {
+        "name": "rules",
+        "type": "array",
+        "default": [],
+        "source": "validatable"
+      },
+      {
+        "name": "searchInput",
+        "type": "any",
+        "default": "undefined",
+        "source": "v-select"
+      },
+      {
+        "name": "singleLine",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-text-field"
+      },
+      {
+        "name": "smallChips",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-select"
+      },
+      {
+        "name": "solo",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-text-field"
+      },
+      {
+        "name": "soloInverted",
+        "type": "boolean",
+        "default": "false",
+        "source": "v-text-field"
+      },
+      {
+        "name": "success",
+        "type": "boolean",
+        "default": "false",
+        "source": "validatable"
+      },
+      {
+        "name": "successMessages",
+        "type": [
+          "string",
+          "array"
+        ],
+        "default": [],
+        "source": "validatable"
+      },
+      {
+        "name": "suffix",
+        "type": "string",
+        "default": "undefined",
+        "source": "v-text-field"
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "default": "'text'",
+        "source": "v-text-field"
+      },
+      {
+        "name": "validateOnBlur",
+        "type": "boolean",
+        "default": "false",
+        "source": "validatable"
+      },
+      {
+        "name": "value",
+        "type": "any",
+        "default": "undefined",
+        "source": "validatable"
+      },
+      {
+        "name": "valueComparator",
+        "type": "function",
+        "default": "(a: any, b: any) => boolean",
+        "source": "comparable"
+      }
+    ],
+    "mixins": [
+      "comparable",
+      "filterable"
+    ],
+    "slots": [
+      "append",
+      "prepend",
+      "default",
+      "append-outer",
+      "prepend-inner",
+      "label",
+      "append-item",
+      "prepend-item",
+      "no-data",
+      "progress"
+    ],
+    "scopedSlots": [
+      {
+        "name": "selection",
+        "props": {
+          "parent": "VueComponent",
+          "item": "object",
+          "index": "number",
+          "selected": "boolean",
+          "disabled": "boolean"
+        }
+      },
+      {
+        "name": "item",
+        "props": {
+          "parent": "VueComponent",
+          "item": "object",
+          "tile": "object"
+        }
+      }
+    ],
+    "events": [
+      {
+        "name": "input",
+        "value": "any"
+      },
+      {
+        "name": "change",
+        "value": "any"
+      },
+      {
+        "name": "update:searchInput",
+        "value": "string"
+      },
+      {
+        "name": "click:prepend",
+        "value": "Event"
+      },
+      {
+        "name": "click:append",
+        "value": "Event"
+      },
+      {
+        "name": "click:clear",
+        "value": "Event"
+      },
+      {
+        "name": "click:append-outer",
+        "value": "Event"
+      },
+      {
+        "name": "click:prepend-inner",
+        "value": "Event"
+      },
+      {
+        "name": "update:error",
+        "value": "boolean"
+      }
+    ]
+  }
+}
