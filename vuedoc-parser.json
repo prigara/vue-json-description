@@ -1,3 +1,4 @@
+// Source: https://gitlab.com/vuedoc/parser
 {
   "name": "checkbox", // The component name
   "description": "A simple checkbox component", // The component description

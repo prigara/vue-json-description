@@ -1,3 +1,4 @@
+// Source: https://github.com/quasarframework/quasar/blob/dev/ui/src/components/banner/QBanner.json
 {
   "behavior": {
     "$listeners": true
