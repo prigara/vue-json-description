@@ -1,0 +1,30 @@
+{
+  "components": {
+    "v-button": {
+      "description": "A button",
+      "attributes": {
+        "width": {
+          "description": "The width of the button",
+          "type": "number",
+          "required": true,
+          "default": 12
+        },
+        "height" : {
+          "description": "The height of the button",
+          "type": "number",
+          "required": true
+        },
+        "corner-style" : {
+          "description": "The style of the button's corner",
+          "type": "string",
+          "enum": {
+            "round": { "description": "Round corners" },
+            "sharp": { "description": "Sharp corners" }
+          },
+          "required": false,
+          "default": "round"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "checkbox", // The component name
+  "description": "A simple checkbox component", // The component description
+  // Attached component keywords
+  "keywords": [
+    { "name": "author", "description": "Sébastien" }
+  ],
+  "props": [ ... ],
+  "data": [ ... ],
+  "computed": [ ... ],
+  "slots": [ ... ],
+  "events": [ ... ],
+  "methods": [ ... ]
+}
