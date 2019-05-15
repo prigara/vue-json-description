@@ -1,0 +1,171 @@
+{
+  "$schema": "",
+  "framework": "vue",
+  "title": "VueFoo Components",
+  "version": "2.5.9",
+  "description": "Awesome Vue library",
+  "license": "MIT",
+  "doc-url": "http://vuefoo.com/docs",
+  "source-repository": "http://github.com/foo/vuefoo",
+  "contributions": {
+    "html": {
+      "types-syntax": "typescript",
+      "types": [
+        {
+          "name": "fooType",
+          "value": "'foo'|'bar'"
+        }
+      ],
+      "tags": [
+        {
+          "name": "v-foo",
+          "selector": "div,span",
+          "description": "Some component",
+          "doc-url": "foo.com/doc/v-foo",
+          "attributes": [
+            {
+              "name": "allowOverflow",
+              "doc-url": "foo.com/doc/v-autocomplete#allowOverflow",
+              "description": "Foo",
+              "type": "boolean",
+              "default": "true",
+              "required": false
+            },
+            {
+              "name": "controlType",
+              "type": "'radio'|'checkbox'|'text'"
+            },
+            {
+              "name": "fooMode",
+              "type": "#fooType"
+            },
+            "appendIcon"
+          ],
+          "events": [
+            "input",
+            {
+              "event": "head-clicked",
+              "description": "Emitted when a header or footer cell is clicked.",
+              "doc-url": "foo.com/doc/v-autocomplete#head-clicked",
+              "arguments": [
+                {
+                  "arg": "key",
+                  "type": "string",
+                  "description": "Column key clicked (field name)."
+                },
+                {
+                  "arg": "field",
+                  "type": "{name: string, value: any}",
+                  "description": "Field definition object."
+                },
+                {
+                  "arg": "event",
+                  "type": "Event",
+                  "description": "Native event object."
+                }
+              ]
+            }
+          ],
+          "slots": [
+            "default",
+            "prepend",
+            {
+              "name": "append",
+              "description": "Append slot"
+            }
+          ],
+          "vue:scopedSlots": [
+            {
+              "name": "selection",
+              "description": "Selection scoped slot",
+              "doc-url": "foo.com/doc/v-autocomplete#selection",
+              "props": [
+                {
+                  "name": "parent",
+                  "type": "VueComponent",
+                  "description": "Foo",
+                  "doc-url": "foo.com/doc/v-autocomplete#selection/parent"
+                },
+                "selected",
+                "disabled"
+              ]
+            },
+            "item"
+          ]
+        },
+        "foo-bar"
+      ],
+      "attributes": [
+        {
+          "name": "allowOverflow",
+          "selector": "div,table",
+          "doc-url": "foo.com/doc/global#allowOverflow",
+          "description": "Foo",
+          "type": "boolean",
+          "default": "true"
+        },
+        "some-global-attr"
+      ]
+    },
+    "css": {
+      "classes": [
+        "my-class",
+        {
+          "name": "my-class-with-descr",
+          "description": "Use this class carefully",
+          "doc-url": "bar.com/descr-class"
+        }
+      ],
+      "properties": [
+        "foo",
+        {
+          "name": "bar",
+          "description": "A bar property",
+          "doc-url": "bar.com/bar-prop",
+          "browsers": [
+            "E12",
+            "S10",
+            "C50"
+          ],
+          "status": "standard",
+          "content": {
+            "kind": "type",
+            "value": "string"
+          }
+        },
+        {
+          "name": "cee",
+          "status": "experimental",
+          "content": {
+            "kind": "regex",
+            "value": "[0-9]*px"
+          }
+        }
+      ],
+      "atDirectives": [
+        "foo"
+      ],
+      "pseudoClasses": [
+        "bar"
+      ],
+      "pseudoElements": [
+        "foo"
+      ]
+    },
+    "vue": {
+      "root-tags": [
+        {
+          "name": "description",
+          "description": "Provides additional information about component available for IDE.",
+          "attributes": [
+            {
+              "name": "content",
+              "default": "'html'",
+              "type": "'html' | 'markdown'"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
